@@ -48,7 +48,7 @@ class _PrimaryAppState extends State<PrimaryApp> {
       FeatherIcons.book,
     ];
     return Container(
-        height: 100,
+        height: 75,
         decoration: BoxDecoration(color: Colors.black),
         child: Padding(
           padding: const EdgeInsets.only(left: 30, right: 30),

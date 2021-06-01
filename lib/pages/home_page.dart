@@ -1,7 +1,9 @@
 import 'package:demo_music_app_ui/json/musics_json.dart';
+import 'package:demo_music_app_ui/pages/playlist_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:page_transition/page_transition.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -33,7 +35,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                   fontWeight: FontWeight.w500),
             ),
-            Icon(Entypo.list)
+            Padding(
+              padding: const EdgeInsets.only(left: 150),
+              child: Icon(Feather.user),
+            ),
+            Icon(Feather.settings),
           ]),
         ));
   }
@@ -43,6 +49,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          //first part of home page
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -101,7 +108,16 @@ class _HomePageState extends State<HomePage> {
                     return Padding(
                       padding: const EdgeInsets.only(right: 35),
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              PageTransition(
+                                  alignment: Alignment.bottomCenter,
+                                  child: PlaylistPage(
+                                    song: songs[index],
+                                  ),
+                                  type: PageTransitionType.scale));
+                        },
                         child: Column(
                           children: [
                             Container(
@@ -216,7 +232,16 @@ class _HomePageState extends State<HomePage> {
                     return Padding(
                       padding: const EdgeInsets.only(right: 35),
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              PageTransition(
+                                  alignment: Alignment.bottomCenter,
+                                  child: PlaylistPage(
+                                    song: songs[index + 5],
+                                  ),
+                                  type: PageTransitionType.scale));
+                        },
                         child: Column(
                           children: [
                             Container(
