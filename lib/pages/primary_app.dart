@@ -25,25 +25,13 @@ class _PrimaryAppState extends State<PrimaryApp> {
       children: [
         HomePage(),
         Center(
-            child: Text("Home",
+            child: Text("Arama",
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                     fontWeight: FontWeight.bold))),
         Center(
-            child: Text("Library",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold))),
-        Center(
-            child: Text("Search",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold))),
-        Center(
-            child: Text("Setting",
+            child: Text("Kütüphane",
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -56,15 +44,14 @@ class _PrimaryAppState extends State<PrimaryApp> {
     List items = [
       //Icons using flutter feather icon package
       FeatherIcons.home,
-      FeatherIcons.book,
       FeatherIcons.search,
-      FeatherIcons.settings,
+      FeatherIcons.book,
     ];
     return Container(
         height: 100,
         decoration: BoxDecoration(color: Colors.black),
         child: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
+          padding: const EdgeInsets.only(left: 30, right: 30),
           child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,9 +59,7 @@ class _PrimaryAppState extends State<PrimaryApp> {
                 return IconButton(
                     icon: Icon(
                       items[index],
-                      color: activeTab == index
-                          ? Colors.green.shade900
-                          : Colors.grey,
+                      color: activeTab == index ? Colors.green : Colors.grey,
                     ),
                     onPressed: () {
                       setState(() {
