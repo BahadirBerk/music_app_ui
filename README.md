@@ -1,16 +1,19 @@
-# demo_music_app_ui
+# Music For Kids
 
-a demo project for internship interview
+Gerçekleşterilen uygulama; Fırat Üniversitesi Yazılım Mühendisliği <strong> Yazılım Mühendisliğinde Güncel Konular </strong> dersi, projesi kapsamında gerçekleştirilmiştir.
+Uygulamanın temel gayesi: çocuklara; müzik eşliğinde alfabe, sayılar vb. temel eğitim unsurlarını öğretmektir.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Projenin geliştirilme sürecinde <strong> Flutter </strong> platformu tercih edilmiştir. Bu platformun; hem IOS hemde Android tabanlı uygulamalar geliştirilmesine olanak sağlaması, Android Studio ve VS Code Desteğinin bulunması, Hot-Reload özelliği ile projenin hızlı ortaya çıkabilmesi gibi bir çok özelliği adına tercih edilmiştir. 
 
-A few resources to get you started if this is your first Flutter project:
+Projenin UI dizaynı için Spotify uygulaması baz alınmıştır.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Detaylı bilgi için ziyaret edebilirsiniz:
+[online documentation](https://flutter.dev/docs).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Development
+Uygulamaya dahil edilen kütüphaneler: (güncellenmektedir)
+- page_transition: "^1.1.7+6"
+- cupertino_icons: ^1.0.2
+- flutter_feather_icons: ^2.0.0
